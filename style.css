@@ -35,6 +35,7 @@ div.card {
   border-radius: 15px;
   padding: 20px;
   box-shadow: #928dab 0px 0px 3px;
+  z-index: 1;
 }
 
 p {
@@ -129,7 +130,6 @@ div.right-circle {
   background-color: rgba(146, 141, 171, 0.5);
   backdrop-filter: blur(20px);
   box-shadow: #928dab 0px 0px 10px;
-  z-index: -1;
 }
 
 @media only screen and (max-width: 401px) {
