@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f1c2c;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  width: 40%;
+  height: 220px;
+  background-color: rgba(146, 141, 171, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: #928dab 0px 0px 3px;
+}
+
+p {
+  color: #ffff;
+  font-family: Vazirmatn;
+}
+
+div.row-1,
+div.row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.row-1 {
+  width: 100%;
+}
+
+div.row-1 div.master-card {
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+div.row-1 div.master-card img {
+  width: 50px;
+}
+
+div.row-1 div.master-card p {
+  width: 40px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+div.row-1 img {
+  width: 40px;
+}
+
+div.row-2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.row-2 p:first-child {
+  width: 100%;
+  font-size: 10px;
+}
+
+div.row-2 p:last-child {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div.row-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+}
+
+div.row-3 div.expire {
+  font-size: 15px;
+  text-align: center;
+}
+
+div.row-3 div.expire :first-child {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+div.left-circle {
+  position: relative;
+  top: -105px;
+  left: 85px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: rgba(146, 141, 171, 0.5);
+  backdrop-filter: blur(20px);
+  box-shadow: #928dab 0px 0px 10px;
+}
+
+div.right-circle {
+  position: relative;
+  bottom: -105px;
+  right: 85px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: rgba(146, 141, 171, 0.5);
+  backdrop-filter: blur(20px);
+  box-shadow: #928dab 0px 0px 10px;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 401px) {
+  div.left-circle,
+  div.right-circle {
+    display: none;
+  }
+
+  div.card {
+    width: 90%;
+  }
+
+  div.row-2 p:last-child {
+    font-size: 15px;
+  }
+}
